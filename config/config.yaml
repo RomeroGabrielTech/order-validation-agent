@@ -1,0 +1,42 @@
+# Configuración del Agente de Validación de Pedidos
+
+# Google Gemini Configuration
+gemini:
+  model: "gemini-1.5-flash"  # o "gemini-1.5-pro"
+  temperature: 0
+  max_tokens: 2048
+  timeout: 30
+
+# Database Configuration
+database:
+  type: "mock"  # mock, postgresql, mysql, etc.
+  host: "localhost"
+  port: 5432
+  name: "orders_db"
+
+# Logging
+logging:
+  level: "INFO"
+  format: "<green>{time:HH:mm:ss}</green> | <level>{level: <8}</level> | <level>{message}</level>"
+  file: "logs/app.log"
+
+# Validation Rules
+validation_rules:
+  max_order_amount: 100000.0
+  min_order_amount: 0.0
+  max_items_per_order: 100
+  credit_check_enabled: true
+  customer_check_enabled: true
+  items_check_enabled: true
+
+# Credit Settings
+credit:
+  default_limit: 1000.0
+  min_available: 0.0
+  grace_period_days: 30
+
+# Timeouts (seconds)
+timeouts:
+  database_query: 5
+  external_api: 10
+  total_validation: 30

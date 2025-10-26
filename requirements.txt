@@ -1,0 +1,26 @@
+# Core dependencies
+langgraph>=0.2.59
+langchain>=0.3.0
+langchain-core>=0.3.28
+langchain-google-genai>=2.0.8
+langsmith>=0.4.0
+
+# Data handling
+pydantic>=2.0.0,<3.0.0
+pydantic-core>=2.0.0
+python-dotenv>=1.0.0
+pyyaml>=6.0
+
+# Testing
+pytest>=8.0.0
+pytest-cov>=4.1.0
+pytest-asyncio>=0.23.0
+
+# Development
+black>=24.0.0
+flake8>=7.0.0
+mypy>=1.8.0
+
+# Utilities
+rich>=13.0.0
+loguru>=0.7.0

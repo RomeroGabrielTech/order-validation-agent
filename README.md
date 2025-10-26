@@ -337,6 +337,26 @@ We follow [Conventional Commits](https://www.conventionalcommits.org/):
 - `refactor:` Code refactoring
 - `chore:` Maintenance tasks
 
+## 🔑 Configuración de API Key
+
+### Obtener tu API Key de Gemini
+
+1. Ve a [Google AI Studio](https://makersuite.google.com/app/apikey)
+2. Inicia sesión con tu cuenta de Google
+3. Click en **"Create API Key"**
+4. Copia la API key generada
+
+### Configurar Variables de Entorno
+```bash
+# Copiar el archivo de ejemplo
+copy .env.example .env
+
+# Editar .env y agregar tu API key
+# GOOGLE_API_KEY=tu_api_key_aquí
+```
+
+**⚠️ IMPORTANTE:** Nunca subas tu archivo `.env` a GitHub. Ya está incluido en `.gitignore`.
+
 ## 📝 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
